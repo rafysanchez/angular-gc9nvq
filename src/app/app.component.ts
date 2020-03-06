@@ -21,10 +21,13 @@ export class AppComponent {
 
   initialFormValue = Object.assign({}, this.form.value);
 
+
   getUpdatedFields(): string[] {
+  console.log(this.initialFormValue);
     const currentFormValue = this.form.value;
+    
     let data = Object.keys(currentFormValue).filter((key) => currentFormValue[key] != this.initialFormValue[key]);
-    console.log(dat);
+    console.log(data);
     return Object.keys(currentFormValue).filter((key) => currentFormValue[key] != this.initialFormValue[key]);
     
     
