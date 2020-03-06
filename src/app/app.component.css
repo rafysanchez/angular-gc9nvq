@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin: 1rem;
+}

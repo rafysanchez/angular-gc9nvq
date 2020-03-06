@@ -1,0 +1,10 @@
+<form [formGroup]="form" class="form">
+	<input placeholder="Name" formControlName="name">
+  <input placeholder="Age" formControlName="age">
+  <input placeholder="Gender" formControlName="gender">
+  <input placeholder="Email" formControlName="email">
+</form>
+
+
+<h2> Updated Fields </h2>
+{{ getUpdatedFields() }}
