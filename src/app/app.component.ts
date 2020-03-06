@@ -24,5 +24,7 @@ export class AppComponent {
   getUpdatedFields(): string[] {
     const currentFormValue = this.form.value;
     return Object.keys(currentFormValue).filter((key) => currentFormValue[key] != this.initialFormValue[key]);
+    let data = Object.keys(currentFormValue).filter((key) => currentFormValue[key] != this.initialFormValue[key]);
+    console.log(data);
   }
 }
